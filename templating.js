@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
          .nav {
             width: 200px;
             height: 100vh;
-            background-color: #333;
-            color: white;
+            background-color: #white;
+            color: black;
             padding: 20px;
             position: fixed;
-            left: 0;
+            right: 0;
             top: 0;
          }
          .nav ul {
@@ -24,8 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
             margin: 20px 0;
          }
          .nav ul li a {
-            color: white;
+            color: black;
             text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+         }
+         .nav ul li a:hover {
+            color: #007BFF;
+            text-decoration: underline;
          }
       </style>
 
@@ -33,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
          <strong>CMIS 311 ASSIGNMENT 5</strong>
          <hr>
          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chapter 1</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ch1.html">Chapter 1</a></li>
          </ul>
       </nav>
    `;
